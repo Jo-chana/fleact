@@ -22,3 +22,10 @@ Make Full Stack Web Application on Flask & RCA template
  - Flask static folder 는 기본적으로 server/build 로 설정
  
  
+ 3. 개발환경과 배포환경의 분리
+ - 프론트엔드 개발 시 서버 및 DB 연동 대신 fake 데이터를 이용
+ - const ISLOCAL = process.env.NODE_ENV === 'development' 변수 정의
+ - ISLOCAL 변수는 npm run start 시 true를, npm run build 시 false를 반환
+ - 개발과 배포 환경을 마음대로 분리시켜 화면 개발에만 집중하고 싶을 때 유용
+ 
+ 
